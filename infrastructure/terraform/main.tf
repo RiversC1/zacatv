@@ -86,7 +86,8 @@ resource "aws_instance" "web" {
 
     # Clone and build
     cd /var/www
-    git clone https://github.com/RiversC1/zacatv.git zacaxd
+    git config --global credential.helper ""
+    GIT_TERMINAL_PROMPT=0 git clone https://github.com/RiversC1/zacatv.git zacaxd
     cd zacaxd
     npm install
     npm run build

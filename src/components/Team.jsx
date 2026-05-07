@@ -1,3 +1,5 @@
+import { ASSETS_URL } from '../config'
+
 const MEMBERS = [
   { id: 'giacomo',  name: 'GIACOMO',  fullName: 'Giacomo Benavides',  role: 'Conductor & Fundador' },
   { id: 'domenico', name: 'DOMENICO', fullName: 'Domenico Benavides', role: 'Co-conductor' },
@@ -15,7 +17,7 @@ export default function Team() {
       <div className="team-grid">
         {MEMBERS.map((m) => (
           <div key={m.id} className="team-card">
-            <img src={`/${m.id}.jpg`} alt={m.fullName} className="team-photo" />
+            <img src={`${ASSETS_URL}/${m.id}.jpg`} alt={m.fullName} className="team-photo" />
             <div className="team-name">{m.name}</div>
             <div className="team-role" style={{ marginBottom: '.3rem' }}>{m.fullName}</div>
             <div className="team-role" style={{ color: 'rgba(255,255,255,0.45)' }}>{m.role}</div>

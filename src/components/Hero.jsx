@@ -1,3 +1,5 @@
+import { ASSETS_URL } from '../config'
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -22,7 +24,7 @@ export default function Hero() {
         <div className="live-badge">
           <span className="live-dot" /> En vivo Lun–Vie · 11 AM
         </div>
-        <img src="/banner.png" alt="Somos Lo Que Somos" className="hero-banner" />
+        <img src={`${ASSETS_URL}/banner.png`} alt="Somos Lo Que Somos" className="hero-banner" />
         <h1 className="hero-title">
           <span className="line1">SOMOS</span>
           <br />

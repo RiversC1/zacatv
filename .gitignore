@@ -2,3 +2,9 @@ node_modules
 dist
 .env
 .env.local
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars

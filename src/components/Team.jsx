@@ -5,7 +5,7 @@ const MEMBERS = [
   { id: 'domenico', name: 'DOMENICO', fullName: 'Domenico Benavides', role: 'Co-conductor' },
   { id: 'gia',      name: 'GIA',      fullName: 'Gia Meier',          role: 'Conductora' },
   { id: 'andrea',   name: 'ANDREA',   fullName: 'Andrea Noriega',     role: 'Conductora' },
-  { id: 'mafe',     name: 'MAFE',     fullName: 'Mafe Delgado',       role: 'Conductora' },
+  { id: 'mafe',     name: 'MAFE',     fullName: 'Mafe Sin R',       role: 'Conductora' },
 ]
 
 export default function Team() {
